@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Multistack.h"
+#include "MultiStack.h"
 int main()
 {
     TMultiStack<int> s(5, 2);
