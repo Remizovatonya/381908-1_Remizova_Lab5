@@ -1,5 +1,5 @@
 #include "../gtest/gtest.h"
-#include <Multistack.h>
+#include <MultiStack.h>
 
 TEST(Multistack, can_create_multistack)
 {

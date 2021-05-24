@@ -7,7 +7,7 @@ using namespace std;
 template<class T>
 class TStack {
 public:
-    T* arr = nullptr;
+    T* arr = NULL;
     int size = 1;
     int front = -1;
     bool data_belongs_to_stack = true;
@@ -124,7 +124,7 @@ template<class T>
 TStack<T>::~TStack() {
     if (this->data_belongs_to_stack) {
         delete[] this->arr;
-        this->arr = nullptr;
+        this->arr = NULL;
     }
 }
 

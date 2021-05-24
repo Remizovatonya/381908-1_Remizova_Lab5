@@ -10,7 +10,7 @@ using namespace std;
 template<class T>
 class TMultiStack {
 public:
-    T* arr = nullptr;
+    T* arr = NULL;
     int size;
     int stack_count;
     TStack<T>* stacks;
@@ -121,10 +121,6 @@ void TMultiStack<T>::push(T item, int index) {
         this->relocate();
     }
     this->stacks[index].push(item);
-    //    for (int l = 0; l < stack_count; ++l) {
-    //        std::cout<<this->stacks[l].get_size()<<" "<<this->stacks[l].get_item_count()<<std::endl;
-    //    }
-    //    std::cout<<std::endl;
 }
 
 template<class T>
@@ -143,8 +139,8 @@ template<class T>
 TMultiStack<T>::~TMultiStack() {
     delete[] this->arr;
     delete[] this->stacks;
-    this->stacks = nullptr;
-    this->arr = nullptr;
+    this->stacks = NULL;
+    this->arr = NULL;
 }
 
 template<class T>
